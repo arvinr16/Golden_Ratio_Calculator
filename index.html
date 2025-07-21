@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>Golden Ratio Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Kalkulator Rasio Emas (1.618)</h2>
+      <label for="mode">Pilih Mode Input:</label>
+      <select id="mode">
+        <option value="lebar">Masukkan Lebar → Hitung Tinggi</option>
+        <option value="tinggi">Masukkan Tinggi → Hitung Lebar</option>
+      </select>
+      <label for="input">Masukkan Nilai:</label>
+      <input type="number" id="input" placeholder="Contoh: 100" />
+      <button onclick="hitungRasio()">Hitung</button>
+      <div class="result" id="hasil" style="display: none"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
