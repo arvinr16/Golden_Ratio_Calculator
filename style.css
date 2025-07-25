@@ -21,19 +21,33 @@ body {
     width: 100%;
 }
 
+.container-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h2 {
+    background: linear-gradient(45deg, #8F6FF1, #65B2FF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 20px;
 }
 
 label, input, select {
     display: block;
+    height: auto;
     width: 100%;
     margin-bottom: 15px;
+    background: linear-gradient(45deg, #513e86, #00456f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
      
 input[type="number"], select {
-    padding: 10px;
+    padding: 10px 0px;
+    padding-left: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
 }

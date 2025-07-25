@@ -12,14 +12,16 @@
   <body>
     <div class="container">
       <h2>Kalkulator Rasio Emas (1.618)</h2>
-      <label for="mode">Pilih Mode Input:</label>
-      <select id="mode">
-        <option value="lebar">Masukkan Lebar → Hitung Tinggi</option>
-        <option value="tinggi">Masukkan Tinggi → Hitung Lebar</option>
-      </select>
-      <label for="input">Masukkan Nilai:</label>
-      <input type="number" id="input" placeholder="Contoh: 100" />
-      <button onclick="hitungRasio()">Hitung</button>
+      <div class="container-detail">
+        <label for="mode">Pilih Mode Input:</label>
+        <select id="mode">
+          <option value="lebar">Masukkan Lebar → Hitung Tinggi</option>
+          <option value="tinggi">Masukkan Tinggi → Hitung Lebar</option>
+        </select>
+        <label for="input">Masukkan Nilai:</label>
+        <input type="number" id="input" placeholder="Contoh: 100" />
+        <button onclick="hitungRasio()">Hitung</button>
+      </div>
       <div class="result" id="hasil" style="display: none"></div>
     </div>
     <script src="main.js"></script>
