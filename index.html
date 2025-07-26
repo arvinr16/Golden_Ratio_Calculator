@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
     </style>
     <title>Golden Ratio Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h2>Kalkulator Rasio Emas (1.618)</h2>
+      <div class="container-title">
+        <img
+          src="images/iconGoldenRatio0.png"
+          alt="iconGR1"
+          style="width: 50px"
+        />
+        <h2>Kalkulator Rasio Emas (1.618)</h2>
+        <img
+          src="images/iconGoldenRatio0.png"
+          alt="iconGR2"
+          style="width: 50px; transform: scaleX(-1)"
+        />
+      </div>
       <div class="container-detail">
         <label for="mode">Pilih Mode Input:</label>
         <select id="mode">
@@ -19,7 +31,11 @@
           <option value="tinggi">Masukkan Tinggi → Hitung Lebar</option>
         </select>
         <label for="input">Masukkan Nilai:</label>
-        <input type="number" id="input" placeholder="Contoh: 100" />
+        <input
+          type="number"
+          id="input"
+          placeholder="Masukkan angka, Contoh: 100"
+        />
         <button onclick="hitungRasio()">Hitung</button>
       </div>
       <div class="result" id="hasil" style="display: none"></div>
