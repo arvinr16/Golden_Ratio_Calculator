@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    margin: 72px 0 0 0;
+    margin: 36px 0 0 0;
 }
 
 .container {
@@ -67,12 +67,13 @@ input[type="number"], select {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #3d84d1;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    transition: background 0.3s ease;
 }
 
 button:hover {
